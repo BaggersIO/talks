@@ -8,8 +8,13 @@ class Animal {
 
   move() {
 
+    console.log(`${this.type} moves.`);
   }
 }
+
+let cat = new Animal('cat');
+
+cat.move();
 
 //ES5
 function Animal (type) {
@@ -18,5 +23,10 @@ function Animal (type) {
 }
 
 Animal.prototype.move = function () {
-  
+
+  console.log(this.type + ' moves.');
 }
+
+var cat = new Animal('cat');
+
+cat.move();
