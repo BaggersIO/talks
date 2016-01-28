@@ -33,9 +33,9 @@ import * as animals from './animals';
 class Zoo {
   constructor() {
     this.animals = [
-      new Dog(),
-      new Dog(),
-      new Cat()
+      new animals.Dog(),
+      new animals.Dog(),
+      new animals.Cat()
     ];
   }
 }
